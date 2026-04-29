@@ -143,10 +143,6 @@ enum WificomState {
   MQTT_SUCCESS, WIFI_READY, WIFI_FAILED, MQTT_FAILED
 };
 WificomState currentWificomState = WIFI_IDLE;
-int currentGameState = 0;
-int currentGameType = 0;
-#define GAME_MENU 0
-#define GAME_TYPE_NONE 0
 
 // -------------------------------------------------------------
 // Utility Functions
@@ -537,10 +533,6 @@ void handleSettings() {
     Serial.println(command);
 
     if (command == "xcom") {
-      WiFi.mode(WIFI_STA);
-      delay(300);
-      String deviceMac = WiFi.macAddress();
-      Serial.println("MACADDRESS:" + String(deviceMac));
       Serial.println("MODEL:" + String(model));
       Serial.println("VERSION:" + String(fw_ver));
     } else if (command.equalsIgnoreCase("help")) {
