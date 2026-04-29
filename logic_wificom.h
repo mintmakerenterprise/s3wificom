@@ -21,9 +21,9 @@ void mqtt_callback(char *topic, byte *payload, unsigned int length) {
   if (ack_id != "" && ack_id != "null") {
     String digiout;
     if (application_id != "") {
-      digiout = "{\"name\":\"espcom\", \"board\":\"ESP8266\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"ack_id\": \"" + ack_id + "\", \"application_id\": \"" + application_id + "\"}";
+      digiout = "{\"name\":\"espcom\", \"board\":\"m5stick\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"ack_id\": \"" + ack_id + "\", \"application_id\": \"" + application_id + "\"}";
     } else {
-      digiout = "{\"name\":\"espcom\", \"board\":\"ESP8266\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"ack_id\": \"" + ack_id + "\", \"application_id\": null}";
+      digiout = "{\"name\":\"espcom\", \"board\":\"m5stick\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"ack_id\": \"" + ack_id + "\", \"application_id\": null}";
     }
     mqttClient.publish(mqtt_topic_output.c_str(), digiout.c_str());
   }
@@ -248,12 +248,12 @@ void wificom_loop() {
           resultString.trim();
 
           if (resultString.length() > 0) {
-            String digiout = "{\"name\":\"espcom\", \"board\":\"ESP8266\", \"version\":\"" + String(fw_ver) + "\", \"application_uuid\": \"" + application_id + "\",\"device_uuid\": \"" + secrets_device_uuid + "\",\"output\": \"" + resultString + "\"}";
+            String digiout = "{\"name\":\"espcom\", \"board\":\"m5stick\", \"version\":\"" + String(fw_ver) + "\", \"application_uuid\": \"" + application_id + "\",\"device_uuid\": \"" + secrets_device_uuid + "\",\"output\": \"" + resultString + "\"}";
             mqttClient.publish(mqtt_topic_output.c_str(), digiout.c_str());
           } else {
-            String digiout = "{\"name\":\"espcom\", \"board\":\"ESP8266\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"output\": \"None\", \"application_uuid\": null}";
+            String digiout = "{\"name\":\"espcom\", \"board\":\"m5stick\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"output\": \"None\", \"application_uuid\": null}";
             if (application_id != "" && application_id != "null") {
-              digiout = "{\"name\":\"espcom\", \"board\":\"ESP8266\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"output\": \"None\", \"application_uuid\": \"" + application_id + "\"}";
+              digiout = "{\"name\":\"espcom\", \"board\":\"m5stick\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"output\": \"None\", \"application_uuid\": \"" + application_id + "\"}";
             }
             mqttClient.publish(mqtt_topic_output.c_str(), digiout.c_str());
           }
@@ -265,9 +265,9 @@ void wificom_loop() {
           }
 
         } else {
-          String digiout = "{\"name\":\"espcom\", \"board\":\"ESP8266\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"output\": \"None\", \"application_uuid\": null}";
+          String digiout = "{\"name\":\"espcom\", \"board\":\"m5stick\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"output\": \"None\", \"application_uuid\": null}";
           if (application_id != "" && application_id != "null") {
-            digiout = "{\"name\":\"espcom\", \"board\":\"ESP8266\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"output\": \"None\", \"application_uuid\": \"" + application_id + "\"}";
+            digiout = "{\"name\":\"espcom\", \"board\":\"m5stick\", \"version\":\"" + String(fw_ver) + "\", \"device_uuid\": \"" + secrets_device_uuid + "\", \"output\": \"None\", \"application_uuid\": \"" + application_id + "\"}";
           }
           mqttClient.publish(mqtt_topic_output.c_str(), digiout.c_str());
         }
