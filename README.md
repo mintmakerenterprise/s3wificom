@@ -1,7 +1,7 @@
 # m5wificom-Source Code
 compile code with Arduino IDE <br>
 Or use the ready-to-flash and configuration at<br>
-https://m5wificom.n3gp.com/
+https://m5wificom.n3gp.com/index-dev
 
 Clone all file and open m5wificom.ino on Arduino IDE
 install all include library before compile.
