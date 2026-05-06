@@ -14,6 +14,8 @@ Source (t_display_s3.ino)
     int OUTPUT_PIN = 1;
 
 
+![Resistor circuit](mintmakerenterprise/s3wificom/t display s3 circuit.png)
+
 <hr>
 *credit for*<br>
 Main reference <a href="https://github.com/SuwitNaynan/m5wificom-source">M5wificom-source by SuwitNaynan</a><br>
