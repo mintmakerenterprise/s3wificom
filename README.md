@@ -47,5 +47,5 @@ For complete upload steps, refer <a href="https://github.com/Xinyuan-LilyGO/T-Di
 *credit for*<br>
 Main reference <a href="https://github.com/SuwitNaynan/m5wificom-source">M5wificom-source by SuwitNaynan</a><br>
 base library form <a href="https://wificom.dev/">BrassBolt@wificom</a> , <a href="https://github.com/dmcomm">BladeSabre@DMComm</a>,  <a href="https://gist.github.com/arcao">Martin Sloup@StringStream</a>, Arduino<br>
-base drigirom form <a href="https://humulos.com/">humulos</a>, <a href="https://www.youtube.com/@joushiikuta/videos">jyoshiikuta</a>, Feanan<br>
+base digirom form <a href="https://humulos.com/">humulos</a>, <a href="https://www.youtube.com/@joushiikuta/videos">jyoshiikuta</a>, Feanan<br>
 
