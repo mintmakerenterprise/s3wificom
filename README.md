@@ -1,7 +1,7 @@
 # S3wificom
-Referencing <a href="https://github.com/SuwitNaynan/m5wificom-source">M5wificom-source code by SuwitNaynan</a> and port in for <a href="https://github.com/Xinyuan-LilyGO/T-Display-S3"> Lilygo T-Display-S3</a>
-compile code with Arduino IDE <br>
-
+Referencing <a href="https://github.com/SuwitNaynan/m5wificom-source">M5wificom-source code by SuwitNaynan</a><br>
+Port in for <a href="https://github.com/Xinyuan-LilyGO/T-Display-S3"> Lilygo T-Display-S3</a>
+Compile code with Arduino IDE <br>
 
 Clone the t_display_s3 file and open t_display_s3.ino on Arduino IDE
 install all include library before compile.
@@ -14,7 +14,7 @@ Source (t_display_s3.ino)
     int OUTPUT_PIN = 1;
 
 
-![Resistor circuit](mintmakerenterprise/s3wificom/t display s3 circuit.png)
+![T-Display S3 Circuit](t%20display%20s3%20circuit.png)
 
 <hr>
 *credit for*<br>
