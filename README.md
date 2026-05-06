@@ -16,7 +16,7 @@ Source (t_display_s3.ino)
     int OUTPUT_PIN = 1;
 
 
-![T-Display S3 Circuit](t%20display%20s3%20circuit.png)
+![T-Display S3 Circuit](images/t%20display%20s3%20circuit.png)
 
 
 Ensure you select these parameter during ino upload.
@@ -53,6 +53,24 @@ For complete upload steps, refer <a href="https://github.com/Xinyuan-LilyGO/T-Di
 4. Connect to hotspot 
 5. Type ip address on browser to access to form 
 6. Input your wificom detail and home wifi for connection
+
+
+### Main Menu
+
+![S3 Main Menu](images/S3%20main%20menu.JPG)
+
+### WiFi Setup
+
+![WiFi Setup](images/wifi%20setup.jpg)
+
+
+### Hotspot Setup
+
+![Hotspot Setup](images/hotspot%20setup.JPG)
+
+### Hotspot Input Page
+
+![Hotspot Input Page](images/hotspot%20for%20input.png)
 
 
 
