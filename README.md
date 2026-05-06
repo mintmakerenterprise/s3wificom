@@ -16,6 +16,33 @@ Source (t_display_s3.ino)
 
 ![T-Display S3 Circuit](t%20display%20s3%20circuit.png)
 
+
+Ensure you select these parameter during ino upload.
+
+## Arduino IDE Settings
+
+| Arduino IDE Setting | Value |
+|---|---|
+| Board | ESP32S3 Dev Module |
+| Port | Your port |
+| USB CDC On Boot | Enable |
+| CPU Frequency | 240MHz (WiFi) |
+| Core Debug Level | None |
+| USB DFU On Boot | Disable |
+| Erase All Flash Before Sketch Upload | Disable |
+| Events Run On | Core 1 |
+| Flash Mode | QIO 80MHz |
+| Flash Size | 16MB (128Mb) |
+| Arduino Runs On | Core 1 |
+| USB Firmware MSC On Boot | Disable |
+| Partition Scheme | 16M Flash (3M APP / 9.9MB FATFS) |
+| PSRAM | OPI PSRAM |
+| Upload Mode | UART0 / Hardware CDC |
+| Upload Speed | 921600 |
+| USB Mode | CDC and JTAG |
+
+For complete upload steps, refer <a href="https://github.com/Xinyuan-LilyGO/T-Display-S3"> Arduino IDE Manual installation</a>
+
 <hr>
 *credit for*<br>
 Main reference <a href="https://github.com/SuwitNaynan/m5wificom-source">M5wificom-source by SuwitNaynan</a><br>
