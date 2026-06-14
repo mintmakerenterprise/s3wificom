@@ -74,7 +74,7 @@ For complete upload steps, refer <a href="https://github.com/Xinyuan-LilyGO/T-Di
 
 
 ## Bluetooth function
-![BtCom](images/btcom.png)
+![BtCom](images/btcom.jpg)
 
 <hr>
 *credit for*<br>
