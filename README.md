@@ -73,7 +73,8 @@ For complete upload steps, refer <a href="https://github.com/Xinyuan-LilyGO/T-Di
 ![Hotspot Input Page](images/hotspot%20for%20input.png)
 
 
-
+## Bluetooth function
+![BtCom](images/btcom.png)
 
 <hr>
 *credit for*<br>
